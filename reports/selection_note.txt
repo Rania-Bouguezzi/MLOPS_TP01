@@ -1,0 +1,15 @@
+
+Model selection note
+
+Primary metric: Average Precision
+Reason: Churn = Yes is the minority positive class.
+Selection rule: Highest validation Average Precision.
+
+Selected model: Random Forest
+
+Threshold for precision, recall and F1: 0.5
+
+The comparison uses the same six features and the same
+stratified train/validation/test split for every candidate.
+
+The test set was reserved and was not used for model selection.
